@@ -20,6 +20,8 @@ enum collisonType: UInt32 {
 class GameScene: SKScene {
     
     let player = SKSpriteNode(imageNamed: "player")
+    let waves = Bundle.main.decode([Wave].self, from: "waves.json")
+    let enemyTypes = Bundle.main.decode([EnemyType].self, from: "enemy-types.json")
     
     override func didMove(to view: SKView) {
         if let paticles = SKEmitterNode(fileNamed: "Starfield") {
