@@ -21,6 +21,8 @@
 		4E7CE8332A65A88000A7C9D3 /* waves.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CE8312A65A88000A7C9D3 /* waves.json */; };
 		4E7CE8352A65A8AD00A7C9D3 /* Bundle-Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CE8342A65A8AD00A7C9D3 /* Bundle-Decoding.swift */; };
 		4E7CE8372A65ABE300A7C9D3 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CE8362A65ABE300A7C9D3 /* EnemyNode.swift */; };
+		4E7CE9092A670D4B00A7C9D3 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CE9072A670D4B00A7C9D3 /* Explosion.sks */; };
+		4E7CE90A2A670D4B00A7C9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CE9082A670D4B00A7C9D3 /* Assets.xcassets */; };
 		4EB7B2A52A59E159008EF4B9 /* TestSpriteKitClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7B2A42A59E159008EF4B9 /* TestSpriteKitClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		4E7CE8312A65A88000A7C9D3 /* waves.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waves.json; sourceTree = "<group>"; };
 		4E7CE8342A65A8AD00A7C9D3 /* Bundle-Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decoding.swift"; sourceTree = "<group>"; };
 		4E7CE8362A65ABE300A7C9D3 /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		4E7CE9072A670D4B00A7C9D3 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		4E7CE9082A670D4B00A7C9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EB7B2A42A59E159008EF4B9 /* TestSpriteKitClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSpriteKitClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +61,7 @@
 		4E5706762A57517400438BF9 = {
 			isa = PBXGroup;
 			children = (
+				4E7CE9082A670D4B00A7C9D3 /* Assets.xcassets */,
 				4E5706812A57517400438BF9 /* SpriteKitTest */,
 				4E5706802A57517400438BF9 /* Products */,
 			);
@@ -81,13 +86,14 @@
 				4E57068C2A57517400438BF9 /* Main.storyboard */,
 				4E57068F2A57517500438BF9 /* Assets.xcassets */,
 				4E7CE7B22A64306800A7C9D3 /* Starfield.sks */,
+				4E7CE9072A670D4B00A7C9D3 /* Explosion.sks */,
 				4E5706912A57517500438BF9 /* LaunchScreen.storyboard */,
 				4EB7B2A42A59E159008EF4B9 /* TestSpriteKitClass.swift */,
-				4E7CE82C2A65A69200A7C9D3 /* EnemyType.swift */,
 				4E7CE82E2A65A6F200A7C9D3 /* Wave.swift */,
 				4E7CE8302A65A88000A7C9D3 /* enemy-types.json */,
 				4E7CE8312A65A88000A7C9D3 /* waves.json */,
 				4E7CE8342A65A8AD00A7C9D3 /* Bundle-Decoding.swift */,
+				4E7CE82C2A65A69200A7C9D3 /* EnemyType.swift */,
 			);
 			path = SpriteKitTest;
 			sourceTree = "<group>";
@@ -153,9 +159,11 @@
 				4E7CE8322A65A88000A7C9D3 /* enemy-types.json in Resources */,
 				4E57068E2A57517400438BF9 /* Main.storyboard in Resources */,
 				4E7CE8332A65A88000A7C9D3 /* waves.json in Resources */,
+				4E7CE9092A670D4B00A7C9D3 /* Explosion.sks in Resources */,
 				4E5706852A57517400438BF9 /* GameScene.sks in Resources */,
 				4E7CE7B32A64306800A7C9D3 /* Starfield.sks in Resources */,
 				4E5706902A57517500438BF9 /* Assets.xcassets in Resources */,
+				4E7CE90A2A670D4B00A7C9D3 /* Assets.xcassets in Resources */,
 				4E5706932A57517500438BF9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -304,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
