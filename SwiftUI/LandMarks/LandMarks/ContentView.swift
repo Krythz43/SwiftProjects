@@ -9,17 +9,41 @@ import SwiftUI
 
 // By default SwiftUI view files declare two structs
 
-// 1: View confirming 2: Preview confirming
+// 1: View confirming
+// 2: Preview confirming
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hey, this is Krithick")
+            MapView()
+                .frame(height: 300)
+                .ignoresSafeArea(edges: .top)
+            CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                    .font(.title)
+                    .foregroundColor(.green)
+                // Modifiers wrap a view to change its display or other properties.
+                // Each modifier returns a new view, so its common to stack modifiers vertically
+                HStack {
+                    Text("Joshua Tree National Park")
+                    Spacer()
+                    Text("California")
+                }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                
+                Divider()
+                
+                Text("About Turtle Rock")
+                    .font(.title2)
+                Text("Descriptive text goes here.")
+            }
+            .padding()
+            Spacer()
         }
-        .padding()
     }
 }
 
